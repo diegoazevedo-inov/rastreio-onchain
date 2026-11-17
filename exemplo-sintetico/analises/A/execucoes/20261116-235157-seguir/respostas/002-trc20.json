@@ -1,0 +1,69 @@
+{
+ "url": "https://nile.trongrid.io/v1/accounts/TQ5CUe1QqQmRvd7Vx8gTCdCnu5nAFH1twE/transactions/trc20?limit=200&contract_address=TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf&order_by=block_timestamp%2Casc&min_timestamp=1794871485000",
+ "corpo": null,
+ "resposta": {
+  "data": [
+   {
+    "transaction_id": "40d6399f352f717154d7caf9c5364d2720bf41aee5d453e71fabf0df16f8a1b5",
+    "token_info": {
+     "symbol": "USDT",
+     "address": "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf",
+     "decimals": 6,
+     "name": "Tether USD"
+    },
+    "block_timestamp": 1794871485000,
+    "from": "TXXj87UjQReAAvu49t1N3Gs9NuXFSgQ8np",
+    "to": "TQ5CUe1QqQmRvd7Vx8gTCdCnu5nAFH1twE",
+    "type": "Transfer",
+    "value": "1000000000"
+   },
+   {
+    "transaction_id": "e313a2cefce7e1dd8d89dfb17e5310e714d73a92de6aca8e9b7e9f0589179f7f",
+    "token_info": {
+     "symbol": "USDT",
+     "address": "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf",
+     "decimals": 6,
+     "name": "Tether USD"
+    },
+    "block_timestamp": 1794871509000,
+    "from": "TQ5CUe1QqQmRvd7Vx8gTCdCnu5nAFH1twE",
+    "to": "TUDB9jNJfoZ7J5PmgswXuL4pMYMCDg3pHn",
+    "type": "Transfer",
+    "value": "410000000"
+   },
+   {
+    "transaction_id": "fe3a96b28462c1c77054a01c02d181233c7568b953b7d765984630c1fd384554",
+    "token_info": {
+     "symbol": "USDT",
+     "address": "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf",
+     "decimals": 6,
+     "name": "Tether USD"
+    },
+    "block_timestamp": 1794871515000,
+    "from": "TQ5CUe1QqQmRvd7Vx8gTCdCnu5nAFH1twE",
+    "to": "TG5VrrxsrLccFNBQMs8KAxyzhkkpyqjUTr",
+    "type": "Transfer",
+    "value": "340000000"
+   },
+   {
+    "transaction_id": "78461df64bc33349e9537bdde9aea67a7b82c276c8c6a7e19b2d0da41de8431e",
+    "token_info": {
+     "symbol": "USDT",
+     "address": "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf",
+     "decimals": 6,
+     "name": "Tether USD"
+    },
+    "block_timestamp": 1794871521000,
+    "from": "TQ5CUe1QqQmRvd7Vx8gTCdCnu5nAFH1twE",
+    "to": "TK7M7XeizZENZZvvBRtqDQAwtyezL1xfSp",
+    "type": "Transfer",
+    "value": "250000000"
+   }
+  ],
+  "success": true,
+  "meta": {
+   "at": 1794873118932,
+   "page_size": 4
+  }
+ }
+}

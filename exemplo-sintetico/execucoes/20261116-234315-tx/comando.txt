@@ -1,0 +1,1 @@
+rastreio.py --rede nile --pasta exemplo-sintetico/execucoes tx 0669f1e5044599de8807ce4b71b2b73c8400199fde73da2134afcbb1f7f11755

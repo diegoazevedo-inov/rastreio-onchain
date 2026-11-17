@@ -1,0 +1,1 @@
+rastreio.py --rede nile --pasta exemplo-sintetico/execucoes transferencias TEcWfhn3h7X8UYR5REz4s2w9PMA1B2f21X

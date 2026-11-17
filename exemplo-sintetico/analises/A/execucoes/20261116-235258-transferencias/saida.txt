@@ -1,0 +1,4 @@
+# rede nile · consulta em 2026-11-16 23:52:58 UTC
+1 movimento(s) de USDT de/para TCdNNrHkXBaxxSaD1beacDwmjMjEzDpof4 (transferências e autorizações)
+2026-11-16 23:24:39 UTC  AUTORIZADO     10.000.000,000000  TXXj87UjQReAAvu49t1N3Gs9NuXFSgQ8np  8d4bfd76c85e94f8db9ce61746dfa1eddc15725aa653e240f30700a9c0a77a9a
+AUTORIZA = autorização de gasto (não move saldo). Conferir o valor vigente com o comando allowance.

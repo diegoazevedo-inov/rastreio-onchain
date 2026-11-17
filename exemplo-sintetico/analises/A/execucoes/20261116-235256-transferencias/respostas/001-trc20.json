@@ -1,0 +1,41 @@
+{
+ "url": "https://nile.trongrid.io/v1/accounts/TEhWiZDs4aYvvG5bRQBfqjKPyzwepmQ2RR/transactions/trc20?limit=200&contract_address=TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf&order_by=block_timestamp%2Casc",
+ "corpo": null,
+ "resposta": {
+  "data": [
+   {
+    "transaction_id": "d861fee43afd6a0ffa0349abbb91a06199079610149d6651c520ca1e5f008752",
+    "token_info": {
+     "symbol": "USDT",
+     "address": "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf",
+     "decimals": 6,
+     "name": "Tether USD"
+    },
+    "block_timestamp": 1794871323000,
+    "from": "TVF2Mp9QY7FEGTnr3DBpFLobA6jguHyMvi",
+    "to": "TEhWiZDs4aYvvG5bRQBfqjKPyzwepmQ2RR",
+    "type": "Transfer",
+    "value": "1000000000"
+   },
+   {
+    "transaction_id": "d23cbcdce5a553695dd80996b807d55e14fc015b4686c72f60420c984ab39867",
+    "token_info": {
+     "symbol": "USDT",
+     "address": "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf",
+     "decimals": 6,
+     "name": "Tether USD"
+    },
+    "block_timestamp": 1794871461000,
+    "from": "TEhWiZDs4aYvvG5bRQBfqjKPyzwepmQ2RR",
+    "to": "TXXj87UjQReAAvu49t1N3Gs9NuXFSgQ8np",
+    "type": "Transfer",
+    "value": "1000000000"
+   }
+  ],
+  "success": true,
+  "meta": {
+   "at": 1794873177248,
+   "page_size": 2
+  }
+ }
+}

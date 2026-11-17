@@ -1,0 +1,39 @@
+{
+ "url": "https://nile.trongrid.io/wallet/gettransactionbyid",
+ "corpo": {
+  "value": "40d6399f352f717154d7caf9c5364d2720bf41aee5d453e71fabf0df16f8a1b5",
+  "visible": true
+ },
+ "resposta": {
+  "raw_data": {
+   "ref_block_bytes": "7c41",
+   "ref_block_hash": "7d13dd9ffc01828b",
+   "expiration": 1794871542658,
+   "contract": [
+    {
+     "parameter": {
+      "value": {
+       "owner_address": "TQ5CUe1QqQmRvd7Vx8gTCdCnu5nAFH1twE",
+       "contract_address": "TCdNNrHkXBaxxSaD1beacDwmjMjEzDpof4",
+       "data": "a3ffa9cd000000000000000000000000ec8118b3b6bf962a56cef9e020cc398fb1510616000000000000000000000000000000000000000000000000000000003b9aca00"
+      },
+      "type_url": "type.googleapis.com/protocol.TriggerSmartContract"
+     },
+     "type": "TriggerSmartContract"
+    }
+   ],
+   "timestamp": 1794871482658,
+   "fee_limit": 150000000
+  },
+  "signature": [
+   "e167799b6d1ccb673105bc8073c02216f60a6dc6e940b9e0f027a9f1d7de146168e0f721605abea802f8f43ec768b8883983c3b29a79f006ca32d7075e3fa46001"
+  ],
+  "ret": [
+   {
+    "contractRet": "SUCCESS"
+   }
+  ],
+  "raw_data_hex": "0a027c4122087d13dd9ffc01828b408287b9b59e345aae01081f12a9010a31747970652e676f6f676c65617069732e636f6d2f70726f746f636f6c2e54726967676572536d617274436f6e747261637412740a15419ab3d1a51baa6042ad458179923dff058c50bdcf1215411d27e2733685e8a5548e0128fc9996480a3d9a572244a3ffa9cd000000000000000000000000ec8118b3b6bf962a56cef9e020cc398fb1510616000000000000000000000000000000000000000000000000000000003b9aca0070a2b2b5b59e34900180a3c347",
+  "txID": "40d6399f352f717154d7caf9c5364d2720bf41aee5d453e71fabf0df16f8a1b5"
+ }
+}

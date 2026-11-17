@@ -1,0 +1,7 @@
+# rede nile · consulta em 2026-11-16 23:43:15 UTC
+transação   0669f1e5044599de8807ce4b71b2b73c8400199fde73da2134afcbb1f7f11755
+bloco       72776784  2026-11-16 23:24:33 UTC
+tipo        TransferContract
+assinada por TQ5CUe1QqQmRvd7Vx8gTCdCnu5nAFH1twE  (1 assinatura(s))
+resultado   SUCCESS
+envio de TRX 25.000000 para TXXj87UjQReAAvu49t1N3Gs9NuXFSgQ8np

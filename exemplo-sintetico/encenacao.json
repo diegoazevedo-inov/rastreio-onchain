@@ -1,0 +1,175 @@
+{
+  "rede": "nile",
+  "contrato_usdt": "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf",
+  "passos": [
+    {
+      "passo": "abastecer_operador",
+      "descricao": "abastecimento de TRX do operador",
+      "txid": "b19f6cc90119ca2b8c84b821431c40e9962d13177f1410a715cfd9c583dcd145",
+      "hora_utc": "2026-11-16T23:24:12Z"
+    },
+    {
+      "passo": "abastecer_servico",
+      "descricao": "abastecimento de TRX da carteira de serviço",
+      "txid": "b577e853606766b932f2023f159f183b5e6ab313f4842b6e4df5e8ecdf465304",
+      "hora_utc": "2026-11-16T23:24:18Z"
+    },
+    {
+      "passo": "compra_vitima",
+      "descricao": "vítima recebe 1.000 USDT (compra)",
+      "txid": "d23cbcdce5a553695dd80996b807d55e14fc015b4686c72f60420c984ab39867",
+      "hora_utc": "2026-11-16T23:24:23Z"
+    },
+    {
+      "passo": "implantar_drenador",
+      "descricao": "operador implanta o contrato drenador de teste",
+      "txid": "74ef2aa2991d613276895a01afad4fec5b1f0f748ff93a64fc86496e1ed0a950",
+      "hora_utc": "2026-11-16T23:24:29Z",
+      "contrato": "TCdNNrHkXBaxxSaD1beacDwmjMjEzDpof4"
+    },
+    {
+      "passo": "aluguel_energia",
+      "descricao": "operador envia TRX à vítima para ela conseguir assinar",
+      "txid": "0669f1e5044599de8807ce4b71b2b73c8400199fde73da2134afcbb1f7f11755",
+      "hora_utc": "2026-11-16T23:24:36Z"
+    },
+    {
+      "passo": "autorizacao",
+      "descricao": "vítima assina increaseApproval(drenador, 10.000.000 USDT)",
+      "txid": "8d4bfd76c85e94f8db9ce61746dfa1eddc15725aa653e240f30700a9c0a77a9a",
+      "hora_utc": "2026-11-16T23:24:42Z"
+    },
+    {
+      "passo": "charge",
+      "descricao": "operador chama charge(vitima, 1000 USDT)",
+      "txid": "40d6399f352f717154d7caf9c5364d2720bf41aee5d453e71fabf0df16f8a1b5",
+      "hora_utc": "2026-11-16T23:24:48Z"
+    },
+    {
+      "passo": "abastecer_intermediaria1",
+      "descricao": "TRX para a intermediária 1",
+      "txid": "d7a567ef364748bb108c7e47eedd3c3035df161c1ba995bfae8db24260339722",
+      "hora_utc": "2026-11-16T23:24:53Z"
+    },
+    {
+      "passo": "abastecer_intermediaria2",
+      "descricao": "TRX para a intermediária 2",
+      "txid": "5a6a119381a0119e54edfdf249375bbe38c6e1aac07286afaeb167a8fc8f47e3",
+      "hora_utc": "2026-11-16T23:25:00Z"
+    },
+    {
+      "passo": "abastecer_intermediaria3",
+      "descricao": "TRX para a intermediária 3",
+      "txid": "a73987fceda7829827b9135a882750af877562eb17e89ae5a341dffbe69760a1",
+      "hora_utc": "2026-11-16T23:25:06Z"
+    },
+    {
+      "passo": "lote_intermediaria1",
+      "descricao": "lote de 410 USDT para a intermediária 1",
+      "txid": "e313a2cefce7e1dd8d89dfb17e5310e714d73a92de6aca8e9b7e9f0589179f7f",
+      "hora_utc": "2026-11-16T23:25:11Z"
+    },
+    {
+      "passo": "lote_intermediaria2",
+      "descricao": "lote de 340 USDT para a intermediária 2",
+      "txid": "fe3a96b28462c1c77054a01c02d181233c7568b953b7d765984630c1fd384554",
+      "hora_utc": "2026-11-16T23:25:18Z"
+    },
+    {
+      "passo": "lote_intermediaria3",
+      "descricao": "lote de 250 USDT para a intermediária 3",
+      "txid": "78461df64bc33349e9537bdde9aea67a7b82c276c8c6a7e19b2d0da41de8431e",
+      "hora_utc": "2026-11-16T23:25:24Z"
+    },
+    {
+      "passo": "abastecer_deposito1",
+      "descricao": "TRX para o depósito 1",
+      "txid": "661984760a4582d0b4b14ba025a5e23c04499319134bad1332b553302392d1ce",
+      "hora_utc": "2026-11-16T23:25:29Z"
+    },
+    {
+      "passo": "abastecer_deposito2",
+      "descricao": "TRX para o depósito 2",
+      "txid": "12b220ca15a340bcd456489d3dedbe6f8545ea0762241e0d2ab115b5a2b6d834",
+      "hora_utc": "2026-11-16T23:25:35Z"
+    },
+    {
+      "passo": "abastecer_deposito3",
+      "descricao": "TRX para o depósito 3",
+      "txid": "2e4d775102bdc151128c93d37422908fd8f803793f5a342fdc55a754113b7b73",
+      "hora_utc": "2026-11-16T23:25:42Z"
+    },
+    {
+      "passo": "taxa_intermediaria1",
+      "descricao": "taxa fixa de 1 USDT (intermediária 1)",
+      "txid": "006fb48a20ab7103ca7f025520c5af57125217327b9770ba631620a4ab01dd3b",
+      "hora_utc": "2026-11-16T23:25:47Z"
+    },
+    {
+      "passo": "teste_deposito1",
+      "descricao": "depósito de teste de 5 USDT (intermediária 1)",
+      "txid": "0ed9653aca79de4098d0b421947db47c1be5ebac5c79a313506e73c79cda9b7d",
+      "hora_utc": "2026-11-16T23:25:53Z"
+    },
+    {
+      "passo": "cheio_deposito1",
+      "descricao": "depósito do restante, 404 USDT (intermediária 1)",
+      "txid": "d402f694e9c3d13db35fc9ae488add55f453ae1761f09cffa0395f8238f0e317",
+      "hora_utc": "2026-11-16T23:25:59Z"
+    },
+    {
+      "passo": "taxa_intermediaria2",
+      "descricao": "taxa fixa de 1 USDT (intermediária 2)",
+      "txid": "5a71864df153b1220f4ad3312d6dcc6f4419faf298dd90b6cc587c036e27e1c0",
+      "hora_utc": "2026-11-16T23:26:06Z"
+    },
+    {
+      "passo": "teste_deposito2",
+      "descricao": "depósito de teste de 5 USDT (intermediária 2)",
+      "txid": "637c01ff3b1e616d78112399bba3d174419c3f1bbebaed684bcf0c2fe42e1ddb",
+      "hora_utc": "2026-11-16T23:26:12Z"
+    },
+    {
+      "passo": "cheio_deposito2",
+      "descricao": "depósito do restante, 334 USDT (intermediária 2)",
+      "txid": "767a2f8724ff05f89826428e7d618f2568d16eb9974d9a311c69d2c2c805f565",
+      "hora_utc": "2026-11-16T23:26:17Z"
+    },
+    {
+      "passo": "taxa_intermediaria3",
+      "descricao": "taxa fixa de 1 USDT (intermediária 3)",
+      "txid": "b45e4ca71a3fcc093339b44d097fa72ac949cf888c6eb8d2a4254fd5baef1ed9",
+      "hora_utc": "2026-11-16T23:26:24Z"
+    },
+    {
+      "passo": "teste_deposito3",
+      "descricao": "depósito de teste de 5 USDT (intermediária 3)",
+      "txid": "798bb149363c1eb9a0d39d2370c8ffc5c7cdab4f5cd6116f7c8efdc3f9966e59",
+      "hora_utc": "2026-11-16T23:26:30Z"
+    },
+    {
+      "passo": "cheio_deposito3",
+      "descricao": "depósito do restante, 244 USDT (intermediária 3)",
+      "txid": "863f0173614a407fe8bec7507d41f7e502687b76c2d154daaa19ecc586f9d852",
+      "hora_utc": "2026-11-16T23:26:35Z"
+    },
+    {
+      "passo": "varredura_deposito1",
+      "descricao": "varredura do depósito 1 para a carteira de serviço",
+      "txid": "73ac60757279655e9455559ab8d1c249119f3b4e7b1a62aba71ff9b8be383f90",
+      "hora_utc": "2026-11-16T23:26:43Z"
+    },
+    {
+      "passo": "varredura_deposito2",
+      "descricao": "varredura do depósito 2 para a carteira de serviço",
+      "txid": "1ec3c4fc066243fc806eb504170d512b52795bf40f7964edc6be285038bdf77e",
+      "hora_utc": "2026-11-16T23:26:48Z"
+    },
+    {
+      "passo": "varredura_deposito3",
+      "descricao": "varredura do depósito 3 para a carteira de serviço",
+      "txid": "2f82638e18bf40621e32ebd5bda47c2ad2df3572a47766026580350f1cfceff2",
+      "hora_utc": "2026-11-16T23:26:54Z"
+    }
+  ]
+}

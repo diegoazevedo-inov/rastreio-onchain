@@ -1,0 +1,46 @@
+{
+ "url": "https://nile.trongrid.io/wallet/triggerconstantcontract",
+ "corpo": {
+  "owner_address": "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf",
+  "contract_address": "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf",
+  "function_selector": "balanceOf(address)",
+  "parameter": "00000000000000000000000008d34a49c93473f133246b946e762a9217166c87",
+  "visible": true
+ },
+ "resposta": {
+  "transaction": {
+   "raw_data": {
+    "ref_block_bytes": "7db8",
+    "ref_block_hash": "668b8689687c2ae1",
+    "expiration": 1794872673000,
+    "contract": [
+     {
+      "parameter": {
+       "value": {
+        "owner_address": "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf",
+        "contract_address": "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf",
+        "data": "70a0823100000000000000000000000008d34a49c93473f133246b946e762a9217166c87"
+       },
+       "type_url": "type.googleapis.com/protocol.TriggerSmartContract"
+      },
+      "type": "TriggerSmartContract"
+     }
+    ],
+    "timestamp": 1794872613103
+   },
+   "ret": [
+    {}
+   ],
+   "raw_data_hex": "0a027db82208668b8689687c2ae140e885feb59e345a8e01081f1289010a31747970652e676f6f676c65617069732e636f6d2f70726f746f636f6c2e54726967676572536d617274436f6e747261637412540a1541eca9bc828a3005b9a3b909f2cc5c2a54794de05f121541eca9bc828a3005b9a3b909f2cc5c2a54794de05f222470a0823100000000000000000000000008d34a49c93473f133246b946e762a9217166c8770efb1fab59e34",
+   "txID": "57687cfaba79f0dbebf7d7d477043d982ab4fd203b3766ceec3d947d4da11513",
+   "visible": true
+  },
+  "constant_result": [
+   "0000000000000000000000000000000000000000000000000000000000000000"
+  ],
+  "result": {
+   "result": true
+  },
+  "energy_used": 935
+ }
+}

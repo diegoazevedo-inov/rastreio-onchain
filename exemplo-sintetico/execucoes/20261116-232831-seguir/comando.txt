@@ -1,0 +1,1 @@
+rastreio.py --rede nile --pasta exemplo-sintetico/execucoes seguir TXXj87UjQReAAvu49t1N3Gs9NuXFSgQ8np --desde 2026-11-16T23:24:00 --saltos 5 --ignorar TUWTzm2dnqKuBrkkM4s3JNoecD8H1UFi2y

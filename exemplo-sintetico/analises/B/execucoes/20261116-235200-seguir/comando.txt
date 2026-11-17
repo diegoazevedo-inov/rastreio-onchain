@@ -1,0 +1,1 @@
+rastreio.py --rede nile seguir TXXj87UjQReAAvu49t1N3Gs9NuXFSgQ8np --desde 2026-11-16T23:00:00 --saltos 6

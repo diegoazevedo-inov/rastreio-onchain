@@ -1,0 +1,18 @@
+{
+ "url": "https://nile.trongrid.io/wallet/gettransactioninfobyid",
+ "corpo": {
+  "value": "0669f1e5044599de8807ce4b71b2b73c8400199fde73da2134afcbb1f7f11755"
+ },
+ "resposta": {
+  "id": "0669f1e5044599de8807ce4b71b2b73c8400199fde73da2134afcbb1f7f11755",
+  "fee": 1100000,
+  "blockNumber": 72776784,
+  "blockTimeStamp": 1794871473000,
+  "contractResult": [
+   ""
+  ],
+  "receipt": {
+   "net_fee": 100000
+  }
+ }
+}

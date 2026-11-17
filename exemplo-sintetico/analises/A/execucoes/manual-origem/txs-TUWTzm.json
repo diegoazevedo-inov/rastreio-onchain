@@ -1,0 +1,13 @@
+{
+ "url": "https://nile.trongrid.io/v1/accounts/TUWTzm2dnqKuBrkkM4s3JNoecD8H1UFi2y/transactions?limit=200&order_by=block_timestamp,asc",
+ "corpo": null,
+ "consultado_em": "2026-11-16T23:55:05.563610+00:00",
+ "resposta": {
+  "data": [],
+  "success": true,
+  "meta": {
+   "at": 1794873305417,
+   "page_size": 0
+  }
+ }
+}

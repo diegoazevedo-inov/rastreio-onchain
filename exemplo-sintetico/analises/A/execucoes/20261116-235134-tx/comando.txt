@@ -1,0 +1,1 @@
+rastreio.py --rede nile tx 40d6399f352f717154d7caf9c5364d2720bf41aee5d453e71fabf0df16f8a1b5

@@ -1,0 +1,69 @@
+{
+ "url": "https://nile.trongrid.io/v1/accounts/TG5VrrxsrLccFNBQMs8KAxyzhkkpyqjUTr/transactions/trc20?limit=200&contract_address=TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf&order_by=block_timestamp%2Casc&min_timestamp=1794871515000",
+ "corpo": null,
+ "resposta": {
+  "data": [
+   {
+    "transaction_id": "fe3a96b28462c1c77054a01c02d181233c7568b953b7d765984630c1fd384554",
+    "token_info": {
+     "symbol": "USDT",
+     "address": "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf",
+     "decimals": 6,
+     "name": "Tether USD"
+    },
+    "block_timestamp": 1794871515000,
+    "from": "TQ5CUe1QqQmRvd7Vx8gTCdCnu5nAFH1twE",
+    "to": "TG5VrrxsrLccFNBQMs8KAxyzhkkpyqjUTr",
+    "type": "Transfer",
+    "value": "340000000"
+   },
+   {
+    "transaction_id": "5a71864df153b1220f4ad3312d6dcc6f4419faf298dd90b6cc587c036e27e1c0",
+    "token_info": {
+     "symbol": "USDT",
+     "address": "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf",
+     "decimals": 6,
+     "name": "Tether USD"
+    },
+    "block_timestamp": 1794871563000,
+    "from": "TG5VrrxsrLccFNBQMs8KAxyzhkkpyqjUTr",
+    "to": "TUWTzm2dnqKuBrkkM4s3JNoecD8H1UFi2y",
+    "type": "Transfer",
+    "value": "1000000"
+   },
+   {
+    "transaction_id": "637c01ff3b1e616d78112399bba3d174419c3f1bbebaed684bcf0c2fe42e1ddb",
+    "token_info": {
+     "symbol": "USDT",
+     "address": "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf",
+     "decimals": 6,
+     "name": "Tether USD"
+    },
+    "block_timestamp": 1794871569000,
+    "from": "TG5VrrxsrLccFNBQMs8KAxyzhkkpyqjUTr",
+    "to": "TSFLcR7iE9Bvw35JBhX4E9aQFAZmccRnix",
+    "type": "Transfer",
+    "value": "5000000"
+   },
+   {
+    "transaction_id": "767a2f8724ff05f89826428e7d618f2568d16eb9974d9a311c69d2c2c805f565",
+    "token_info": {
+     "symbol": "USDT",
+     "address": "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf",
+     "decimals": 6,
+     "name": "Tether USD"
+    },
+    "block_timestamp": 1794871575000,
+    "from": "TG5VrrxsrLccFNBQMs8KAxyzhkkpyqjUTr",
+    "to": "TSFLcR7iE9Bvw35JBhX4E9aQFAZmccRnix",
+    "type": "Transfer",
+    "value": "334000000"
+   }
+  ],
+  "success": true,
+  "meta": {
+   "at": 1794873136843,
+   "page_size": 4
+  }
+ }
+}

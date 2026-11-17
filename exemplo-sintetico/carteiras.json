@@ -1,0 +1,49 @@
+{
+  "rede": "nile",
+  "carteiras": {
+    "banco": {
+      "endereco": "TEhWiZDs4aYvvG5bRQBfqjKPyzwepmQ2RR",
+      "funcao": "recebe TRX e USDT de teste da torneira e abastece os demais"
+    },
+    "vitima": {
+      "endereco": "TXXj87UjQReAAvu49t1N3Gs9NuXFSgQ8np",
+      "funcao": "assina a autorização no 'site falso'"
+    },
+    "operador": {
+      "endereco": "TQ5CUe1QqQmRvd7Vx8gTCdCnu5nAFH1twE",
+      "funcao": "implanta o contrato drenador e chama charge"
+    },
+    "intermediaria1": {
+      "endereco": "TUDB9jNJfoZ7J5PmgswXuL4pMYMCDg3pHn",
+      "funcao": "recebe o 1º lote do operador e repassa"
+    },
+    "intermediaria2": {
+      "endereco": "TG5VrrxsrLccFNBQMs8KAxyzhkkpyqjUTr",
+      "funcao": "recebe o 2º lote do operador e repassa"
+    },
+    "intermediaria3": {
+      "endereco": "TK7M7XeizZENZZvvBRtqDQAwtyezL1xfSp",
+      "funcao": "recebe o 3º lote do operador e repassa"
+    },
+    "deposito1": {
+      "endereco": "TQZ35NhWNu2E9fKmNNvcbjLkUKzinsRSN7",
+      "funcao": "endereço de depósito: repassa tudo à carteira de serviço"
+    },
+    "deposito2": {
+      "endereco": "TSFLcR7iE9Bvw35JBhX4E9aQFAZmccRnix",
+      "funcao": "endereço de depósito: repassa tudo à carteira de serviço"
+    },
+    "deposito3": {
+      "endereco": "TAmsXHxvLG2XaAMn1JKMjtkjSWUWkhgiGn",
+      "funcao": "endereço de depósito: repassa tudo à carteira de serviço"
+    },
+    "servico": {
+      "endereco": "TEcWfhn3h7X8UYR5REz4s2w9PMA1B2f21X",
+      "funcao": "concentra os valores (simula a carteira operacional de um serviço centralizado)"
+    },
+    "taxa": {
+      "endereco": "TUWTzm2dnqKuBrkkM4s3JNoecD8H1UFi2y",
+      "funcao": "recebe uma taxa fixa a cada salto (deve ser excluída do rastreio)"
+    }
+  }
+}

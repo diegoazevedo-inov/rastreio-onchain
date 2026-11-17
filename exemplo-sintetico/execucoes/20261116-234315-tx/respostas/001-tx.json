@@ -1,0 +1,38 @@
+{
+ "url": "https://nile.trongrid.io/wallet/gettransactionbyid",
+ "corpo": {
+  "value": "0669f1e5044599de8807ce4b71b2b73c8400199fde73da2134afcbb1f7f11755",
+  "visible": true
+ },
+ "resposta": {
+  "raw_data": {
+   "ref_block_bytes": "7c3c",
+   "ref_block_hash": "887c9371d3744f14",
+   "expiration": 1794871529383,
+   "contract": [
+    {
+     "parameter": {
+      "value": {
+       "owner_address": "TQ5CUe1QqQmRvd7Vx8gTCdCnu5nAFH1twE",
+       "to_address": "TXXj87UjQReAAvu49t1N3Gs9NuXFSgQ8np",
+       "amount": 25000000
+      },
+      "type_url": "type.googleapis.com/protocol.TransferContract"
+     },
+     "type": "TransferContract"
+    }
+   ],
+   "timestamp": 1794871469383
+  },
+  "signature": [
+   "6254c8564aadf41d3458667897d62a49c09a0f869995097ebd34efd524beeebe1c8b1086f26d8fd775b94a8bbf8dcb35dda28e999aac59447dcfa5763857a4a701"
+  ],
+  "ret": [
+   {
+    "contractRet": "SUCCESS"
+   }
+  ],
+  "raw_data_hex": "0a027c3c2208887c9371d3744f1440a79fb8b59e345a68080112640a2d747970652e676f6f676c65617069732e636f6d2f70726f746f636f6c2e5472616e73666572436f6e747261637412330a15419ab3d1a51baa6042ad458179923dff058c50bdcf121541ec8118b3b6bf962a56cef9e020cc398fb151061618c0f0f50b70c7cab4b59e34",
+  "txID": "0669f1e5044599de8807ce4b71b2b73c8400199fde73da2134afcbb1f7f11755"
+ }
+}

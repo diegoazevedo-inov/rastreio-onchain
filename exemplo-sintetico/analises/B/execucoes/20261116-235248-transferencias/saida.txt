@@ -1,0 +1,5 @@
+# rede nile · consulta em 2026-11-16 23:52:48 UTC
+3 movimento(s) de USDT de/para TUWTzm2dnqKuBrkkM4s3JNoecD8H1UFi2y (transferências e autorizações)
+2026-11-16 23:25:45 UTC  ENTRA                   1,000000  TUDB9jNJfoZ7J5PmgswXuL4pMYMCDg3pHn  006fb48a20ab7103ca7f025520c5af57125217327b9770ba631620a4ab01dd3b
+2026-11-16 23:26:03 UTC  ENTRA                   1,000000  TG5VrrxsrLccFNBQMs8KAxyzhkkpyqjUTr  5a71864df153b1220f4ad3312d6dcc6f4419faf298dd90b6cc587c036e27e1c0
+2026-11-16 23:26:21 UTC  ENTRA                   1,000000  TK7M7XeizZENZZvvBRtqDQAwtyezL1xfSp  b45e4ca71a3fcc093339b44d097fa72ac949cf888c6eb8d2a4254fd5baef1ed9

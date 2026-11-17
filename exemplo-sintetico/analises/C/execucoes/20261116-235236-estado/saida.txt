@@ -1,0 +1,14 @@
+# rede nile · consulta em 2026-11-16 23:52:36 UTC
+endereço                              bloqueado pela emissora             saldo USDT
+TXXj87UjQReAAvu49t1N3Gs9NuXFSgQ8np                        não               0,000000
+TQ5CUe1QqQmRvd7Vx8gTCdCnu5nAFH1twE                        não               0,000000
+TUDB9jNJfoZ7J5PmgswXuL4pMYMCDg3pHn                        não               0,000000
+TG5VrrxsrLccFNBQMs8KAxyzhkkpyqjUTr                        não               0,000000
+TK7M7XeizZENZZvvBRtqDQAwtyezL1xfSp                        não               0,000000
+TQZ35NhWNu2E9fKmNNvcbjLkUKzinsRSN7                        não               0,000000
+TSFLcR7iE9Bvw35JBhX4E9aQFAZmccRnix                        não               0,000000
+TAmsXHxvLG2XaAMn1JKMjtkjSWUWkhgiGn                        não               0,000000
+TEcWfhn3h7X8UYR5REz4s2w9PMA1B2f21X                        não             997,000000
+TUWTzm2dnqKuBrkkM4s3JNoecD8H1UFi2y                        não               3,000000
+TCdNNrHkXBaxxSaD1beacDwmjMjEzDpof4                        não               0,000000
+TEhWiZDs4aYvvG5bRQBfqjKPyzwepmQ2RR                        não               0,000000

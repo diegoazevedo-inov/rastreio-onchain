@@ -1,0 +1,70 @@
+{
+ "url": "https://nile.trongrid.io/wallet/getaccount",
+ "corpo": {
+  "address": "TXXj87UjQReAAvu49t1N3Gs9NuXFSgQ8np",
+  "visible": true
+ },
+ "consultado_em": "2026-11-16T23:53:18.728254+00:00",
+ "resposta": {
+  "address": "TXXj87UjQReAAvu49t1N3Gs9NuXFSgQ8np",
+  "balance": 25000000,
+  "create_time": 1794871470000,
+  "latest_opration_time": 1794871476000,
+  "free_net_usage": 338,
+  "latest_consume_free_time": 1794871476000,
+  "net_window_size": 28800000,
+  "net_window_optimized": true,
+  "account_resource": {
+   "latest_consume_time_for_energy": 1794871476000,
+   "energy_window_size": 28800000,
+   "energy_window_optimized": true
+  },
+  "owner_permission": {
+   "permission_name": "owner",
+   "threshold": 1,
+   "keys": [
+    {
+     "address": "TXXj87UjQReAAvu49t1N3Gs9NuXFSgQ8np",
+     "weight": 1
+    }
+   ]
+  },
+  "active_permission": [
+   {
+    "type": "Active",
+    "id": 2,
+    "permission_name": "active",
+    "threshold": 1,
+    "operations": "7fff1fc0033efb0f000000000000000000000000000000000000000000000000",
+    "keys": [
+     {
+      "address": "TXXj87UjQReAAvu49t1N3Gs9NuXFSgQ8np",
+      "weight": 1
+     }
+    ]
+   }
+  ],
+  "frozenV2": [
+   {},
+   {
+    "type": "ENERGY"
+   },
+   {
+    "type": "TRON_POWER"
+   }
+  ],
+  "assetV2": [
+   {
+    "key": "1007445",
+    "value": 1000000
+   }
+  ],
+  "free_asset_net_usageV2": [
+   {
+    "key": "1007445",
+    "value": 0
+   }
+  ],
+  "asset_optimized": true
+ }
+}

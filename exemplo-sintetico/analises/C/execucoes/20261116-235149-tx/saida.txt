@@ -1,0 +1,9 @@
+# rede nile · consulta em 2026-11-16 23:51:49 UTC
+transação   40d6399f352f717154d7caf9c5364d2720bf41aee5d453e71fabf0df16f8a1b5
+bloco       72776788  2026-11-16 23:24:45 UTC
+tipo        TriggerSmartContract
+assinada por TQ5CUe1QqQmRvd7Vx8gTCdCnu5nAFH1twE  (1 assinatura(s))
+resultado   SUCCESS
+contrato    TCdNNrHkXBaxxSaD1beacDwmjMjEzDpof4
+chamada     charge(TXXj87UjQReAAvu49t1N3Gs9NuXFSgQ8np, 1.000,000000)
+evento      Transfer  TXXj87UjQReAAvu49t1N3Gs9NuXFSgQ8np -> TQ5CUe1QqQmRvd7Vx8gTCdCnu5nAFH1twE  1.000,000000  (contrato TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf)

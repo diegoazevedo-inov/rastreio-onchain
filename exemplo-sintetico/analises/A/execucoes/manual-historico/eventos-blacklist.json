@@ -1,0 +1,13 @@
+{
+ "url": "https://nile.trongrid.io/v1/contracts/TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf/events?event_name=AddedBlackList&min_block_timestamp=1794870000000&limit=200",
+ "corpo": null,
+ "consultado_em": "2026-11-16T23:53:49.444110+00:00",
+ "resposta": {
+  "data": [],
+  "success": true,
+  "meta": {
+   "at": 1794873229292,
+   "page_size": 0
+  }
+ }
+}

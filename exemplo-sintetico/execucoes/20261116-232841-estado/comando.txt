@@ -1,0 +1,1 @@
+rastreio.py --rede nile --pasta exemplo-sintetico/execucoes estado TXXj87UjQReAAvu49t1N3Gs9NuXFSgQ8np TQ5CUe1QqQmRvd7Vx8gTCdCnu5nAFH1twE TEcWfhn3h7X8UYR5REz4s2w9PMA1B2f21X TUWTzm2dnqKuBrkkM4s3JNoecD8H1UFi2y

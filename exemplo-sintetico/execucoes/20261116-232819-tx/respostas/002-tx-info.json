@@ -1,0 +1,32 @@
+{
+ "url": "https://nile.trongrid.io/wallet/gettransactioninfobyid",
+ "corpo": {
+  "value": "8d4bfd76c85e94f8db9ce61746dfa1eddc15725aa653e240f30700a9c0a77a9a"
+ },
+ "resposta": {
+  "id": "8d4bfd76c85e94f8db9ce61746dfa1eddc15725aa653e240f30700a9c0a77a9a",
+  "blockNumber": 72776786,
+  "blockTimeStamp": 1794871479000,
+  "contractResult": [
+   "0000000000000000000000000000000000000000000000000000000000000001"
+  ],
+  "contract_address": "41eca9bc828a3005b9a3b909f2cc5c2a54794de05f",
+  "receipt": {
+   "origin_energy_usage": 23728,
+   "energy_usage_total": 23728,
+   "net_usage": 345,
+   "result": "SUCCESS"
+  },
+  "log": [
+   {
+    "address": "eca9bc828a3005b9a3b909f2cc5c2a54794de05f",
+    "topics": [
+     "8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+     "000000000000000000000000ec8118b3b6bf962a56cef9e020cc398fb1510616",
+     "0000000000000000000000001d27e2733685e8a5548e0128fc9996480a3d9a57"
+    ],
+    "data": "000000000000000000000000000000000000000000000000000009184e72a000"
+   }
+  ]
+ }
+}

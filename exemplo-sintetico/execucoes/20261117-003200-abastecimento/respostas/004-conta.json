@@ -1,0 +1,135 @@
+{
+ "url": "https://nile.trongrid.io/v1/accounts/TQZ35NhWNu2E9fKmNNvcbjLkUKzinsRSN7/transactions?limit=200&order_by=block_timestamp%2Casc",
+ "corpo": null,
+ "resposta": {
+  "data": [
+   {
+    "ret": [
+     {
+      "contractRet": "SUCCESS",
+      "fee": 1100000
+     }
+    ],
+    "signature": [
+     "500b5f303f8c49825906ab5f1f5e29c58ea98dc506da4bd7a0ba34f7260f82a50376d9961da8aec00c623b1fb640f5dcdd69ad254a966563632d8fc81313788501"
+    ],
+    "txID": "661984760a4582d0b4b14ba025a5e23c04499319134bad1332b553302392d1ce",
+    "net_usage": 0,
+    "raw_data_hex": "0a027c4f2208be439092192c4fcf4082cbbbb59e345a68080112640a2d747970652e676f6f676c65617069732e636f6d2f70726f746f636f6c2e5472616e73666572436f6e747261637412330a154132eea40b594b8ec4200796b058fda92f7b7188a51215419ff79e430c2c0b227cc011400778b89b864a88a9188087a70e70a2f6b7b59e34",
+    "net_fee": 100000,
+    "energy_usage": 0,
+    "blockNumber": 72776802,
+    "block_timestamp": 1794871527000,
+    "energy_fee": 0,
+    "energy_usage_total": 0,
+    "raw_data": {
+     "contract": [
+      {
+       "parameter": {
+        "value": {
+         "amount": 30000000,
+         "owner_address": "4132eea40b594b8ec4200796b058fda92f7b7188a5",
+         "to_address": "419ff79e430c2c0b227cc011400778b89b864a88a9"
+        },
+        "type_url": "type.googleapis.com/protocol.TransferContract"
+       },
+       "type": "TransferContract"
+      }
+     ],
+     "ref_block_bytes": "7c4f",
+     "ref_block_hash": "be439092192c4fcf",
+     "expiration": 1794871584130,
+     "timestamp": 1794871524130
+    },
+    "internal_transactions": []
+   },
+   {
+    "ret": [
+     {
+      "contractRet": "SUCCESS",
+      "fee": 0
+     }
+    ],
+    "signature": [
+     "ff7c6d0f2f486ef8978a0b53d3217d3738aa296cdf0ca8a008d927c5cda0d8b066d0f6174e6f3354ab220fae70a75d53171b0198d1113ee633e220719121c2561c"
+    ],
+    "txID": "09c2f1de25d3d9b57b4f9cb1969c2a861bc5ce652bcbdea304a428a0a54ef5c9",
+    "net_usage": 281,
+    "raw_data_hex": "0a027c6222083ed37dce7710183b40b8e1bbb59e345a75080212710a32747970652e676f6f676c65617069732e636f6d2f70726f746f636f6c2e5472616e736665724173736574436f6e7472616374123b0a0731303037343435121541303b40e2230581a117adce0c3716e31bf721b1a41a15419ff79e430c2c0b227cc011400778b89b864a88a920c0843d70dbaeb8b59e34",
+    "net_fee": 0,
+    "energy_usage": 0,
+    "blockNumber": 72776804,
+    "block_timestamp": 1794871533000,
+    "energy_fee": 0,
+    "energy_usage_total": 0,
+    "raw_data": {
+     "contract": [
+      {
+       "parameter": {
+        "value": {
+         "amount": 1000000,
+         "asset_name": "1007445",
+         "owner_address": "41303b40e2230581a117adce0c3716e31bf721b1a4",
+         "to_address": "419ff79e430c2c0b227cc011400778b89b864a88a9"
+        },
+        "type_url": "type.googleapis.com/protocol.TransferAssetContract"
+       },
+       "type": "TransferAssetContract"
+      }
+     ],
+     "ref_block_bytes": "7c62",
+     "ref_block_hash": "3ed37dce7710183b",
+     "expiration": 1794871587000,
+     "timestamp": 1794871531355
+    },
+    "internal_transactions": []
+   },
+   {
+    "ret": [
+     {
+      "contractRet": "SUCCESS",
+      "fee": 0
+     }
+    ],
+    "signature": [
+     "a9d980f8d0abbb5392305215758cc8795698b51c9d07e35cfafcf1f6e79efeb60e1a2fb58af8a33e27a55fad554693b38990a1d1e75a72a1a5957f0c9c66824d01"
+    ],
+    "txID": "73ac60757279655e9455559ab8d1c249119f3b4e7b1a62aba71ff9b8be383f90",
+    "net_usage": 345,
+    "raw_data_hex": "0a027c6622081b017fb51abefc5a40dbfabfb59e345aae01081f12a9010a31747970652e676f6f676c65617069732e636f6d2f70726f746f636f6c2e54726967676572536d617274436f6e747261637412740a15419ff79e430c2c0b227cc011400778b89b864a88a9121541eca9bc828a3005b9a3b909f2cc5c2a54794de05f2244a9059cbb00000000000000000000000032eea40b594b8ec4200796b058fda92f7b7188a5000000000000000000000000000000000000000000000000000000001860d84070fba5bcb59e34900180a3c347",
+    "net_fee": 0,
+    "energy_usage": 0,
+    "blockNumber": 72776826,
+    "block_timestamp": 1794871599000,
+    "energy_fee": 0,
+    "energy_usage_total": 29650,
+    "raw_data": {
+     "contract": [
+      {
+       "parameter": {
+        "value": {
+         "data": "a9059cbb00000000000000000000000032eea40b594b8ec4200796b058fda92f7b7188a5000000000000000000000000000000000000000000000000000000001860d840",
+         "owner_address": "419ff79e430c2c0b227cc011400778b89b864a88a9",
+         "contract_address": "41eca9bc828a3005b9a3b909f2cc5c2a54794de05f"
+        },
+        "type_url": "type.googleapis.com/protocol.TriggerSmartContract"
+       },
+       "type": "TriggerSmartContract"
+      }
+     ],
+     "ref_block_bytes": "7c66",
+     "ref_block_hash": "1b017fb51abefc5a",
+     "expiration": 1794871655771,
+     "fee_limit": 150000000,
+     "timestamp": 1794871595771
+    },
+    "internal_transactions": []
+   }
+  ],
+  "success": true,
+  "meta": {
+   "at": 1794875523993,
+   "page_size": 3
+  }
+ }
+}

@@ -1,0 +1,7 @@
+__pycache__/
+.env
+execucoes/
+!exemplo-sintetico/execucoes/
+!exemplo-sintetico/analises/*/execucoes/
+.venv/
+auditoria/rodadas/

@@ -8,6 +8,7 @@ authors:
     family-names: "Azevedo"
     orcid: "https://orcid.org/0009-0009-1839-7476"
 version: "1.0"
+doi: "10.5281/zenodo.24296844"
 repository-code: "https://github.com/diegoazevedo-inov/rastreio-onchain"
 license: Apache-2.0
 keywords:

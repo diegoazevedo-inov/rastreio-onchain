@@ -2,6 +2,8 @@
 
 Método para reconstruir, só com dados públicos, o que aconteceu com valores em USDT (TRC-20, rede TRON) depois de uma fraude, conferir afirmações de supostos "recuperadores" contra a blockchain e orientar as providências cabíveis. Inclui uma ferramenta de consulta somente-leitura e um caso completo encenado na rede de teste Nile.
 
+Versão 1.0 ([doi:10.5281/zenodo.24296845](https://doi.org/10.5281/zenodo.24296845)). Todas as versões: [doi:10.5281/zenodo.24296844](https://doi.org/10.5281/zenodo.24296844).
+
 ## O que há aqui
 
 | Caminho | Conteúdo |

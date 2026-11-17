@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Para citar, use os metadados abaixo."
+title: "Rastreamento técnico on-chain com conferência por afirmação"
+abstract: "Método para reconstruir, só com dados públicos, o que aconteceu com valores em USDT (TRC-20, rede TRON) depois de uma fraude, conferir afirmações de supostos recuperadores contra a blockchain e orientar as providências cabíveis. Inclui protocolo, ferramenta de consulta somente-leitura com registro e manifesto SHA-256 de cada execução, testes offline com reexecução das consultas guardadas e defeitos plantados, modelos de relatório e de sinais do golpe da recuperação, roteiro de três análises independentes (uma cética) e um caso completo encenado na rede de teste Nile, com gabarito, evidências fictícias, relatório-exemplo e as três análises."
+type: software
+authors:
+  - given-names: "Diêgo"
+    family-names: "Azevedo"
+    orcid: "https://orcid.org/0009-0009-1839-7476"
+version: "1.0"
+repository-code: "https://github.com/diegoazevedo-inov/rastreio-onchain"
+license: Apache-2.0
+keywords:
+  - rastreamento on-chain
+  - TRON
+  - USDT
+  - golpe da recuperação
+  - fraude com criptoativos
+  - reprodutibilidade
+  - sistemas agênticos

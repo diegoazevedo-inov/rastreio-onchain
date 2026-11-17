@@ -48,4 +48,4 @@ Os scripts e textos foram escritos com uma ferramenta de IA generativa (Claude, 
 
 ## Licença
 
-Apache 2.0 ([`LICENSE`](LICENSE)).
+Apache 2.0 ([`LICENSE`](LICENSE)). Para citar, veja [`CITATION.cff`](CITATION.cff).

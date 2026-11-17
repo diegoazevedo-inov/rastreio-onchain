@@ -41,12 +41,14 @@ Carteiras de teste geradas só para isto (`carteiras.json`; as chaves ficam num 
 | `execucoes/` | Consultas do protocolo com `rastreio.py --rede nile`, com respostas brutas e manifesto |
 | `evidencias/` | Relato e conversa fictícios: o que as análises receberam |
 | `relatorio-exemplo.md` | Relatório no modelo "afirmação × prova" |
+| `relatorio-exemplo.pdf` | O mesmo relatório em PDF, com as três análises e a comparação anexadas (`relatorio_pdf.py`) |
 | `analises/` | As três análises independentes, com briefings, consultas e comparação |
 | `conferir.py` | Confere o relatório contra as consultas guardadas e o gabarito |
 
 ## Como reproduzir
 
 - **Sem rede:** `python3 -m unittest teste_rastreio` reexecuta cada consulta de `execucoes/` a partir das respostas guardadas; `python3 exemplo-sintetico/conferir.py` confere o relatório.
+- **PDF:** `python3 relatorio_pdf.py exemplo-sintetico/relatorio-exemplo.md --saida exemplo-sintetico/relatorio-exemplo.pdf --anexo "Análise A" exemplo-sintetico/analises/A/PARECER.md --anexo "Análise B" exemplo-sintetico/analises/B/PARECER.md --anexo "Análise C (papel cético)" exemplo-sintetico/analises/C/PARECER.md --anexo-autor "Comparação das análises" exemplo-sintetico/analises/COMPARACAO.md`.
 - **Contra a Nile:** os comandos de `execucoes/*/comando.txt` refazem as consultas; as saídas devem bater com `saida.txt`, salvo a hora da consulta, enquanto os saldos não mudarem. Duas linhas mudaram de rótulo depois da gravação: em `tx`, "assinada por …" virou "conta … (permissão …)"; no TRC-10 de `abastecimento`, o comentário final virou "(token TRC-10, não é USDT)". O `teste_rastreio.py` aplica essa troca ao comparar.
 - **Remontar a encenação:** exige instalar `requirements.txt`, gerar carteiras novas e pedir TRX e USDT de teste na torneira da Nile (com verificação humana). Os endereços e hashes serão outros.
 

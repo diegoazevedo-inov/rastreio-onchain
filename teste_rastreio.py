@@ -15,6 +15,7 @@ import tempfile
 import unittest
 
 import rastreio as r
+import relatorio_pdf as rp
 
 USDT_B58 = "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
 
@@ -267,7 +268,8 @@ class Reexecucao(unittest.TestCase):
 
 # ---------------------------------------------------------------- casos que o exemplo não tem
 # Respostas sintéticas para ramos que as consultas guardadas não exercitam: endereço
-# bloqueado, permissão que não é a de dono, várias assinaturas, paginação e limite de saltos.
+# bloqueado, permissão que não é a de dono, várias assinaturas, paginação de `transferencias` e
+# limite de saltos.
 
 def rodar_com(respostas_por_req, argv) -> str:
     original = r.Tron._req
@@ -331,6 +333,76 @@ class CasosSinteticos(unittest.TestCase):
               "raw_data": {"contract": [{"type": "TransferContract", "parameter": {"value": {
                   "owner_address": r.base58_para_hex(B_), "to_address": r.base58_para_hex(A_), "amount": 1}}}]}}
         self.assertFalse(r.eventos_trx([tx], A_)[0]["ok"])
+
+
+# ---------------------------------------------------------------- PDF do relatório
+
+class RelatorioPDF(unittest.TestCase):
+    def test_escapa_html(self):
+        self.assertIn("&lt;script&gt;", rp.md_para_html("texto <script>x</script>"))
+
+    def test_negrito_que_contem_codigo(self):
+        h = rp.md_para_html("**Quem é `T1…x`.** resto")
+        self.assertIn("<strong>Quem é <code>T1…x</code>.</strong>", h)
+
+    def test_link_externo_com_escape_simples_e_codigo(self):
+        h = rp.md_para_html("veja [a API](https://e.io/?a=1&b=2) e `rastreio.py`")
+        self.assertIn('<a href="https://e.io/?a=1&amp;b=2">a API</a>', h)
+        self.assertIn("<code>rastreio.py</code>", h)
+
+    def test_link_relativo_vira_texto(self):
+        h = rp.md_para_html("veja [o protocolo](docs/PROTOCOLO.md)")
+        self.assertNotIn("<a ", h)
+        self.assertIn("o protocolo (docs/PROTOCOLO.md)", h)
+
+    def test_lista_ordenada_preserva_numero_inicial(self):
+        self.assertIn('<ol start="4"><li>quatro</li><li>cinco</li></ol>', rp.md_para_html("**Hoje:**\n4. quatro\n5. cinco"))
+
+    def test_anexo_do_autor_nao_se_diz_entregue(self):
+        doc = rp.montar_documento("# T", [("Análise A", "pa"), ("Comparação", "pc", False)])
+        self.assertIn("Anexo A: Análise A.</strong> Texto como entregue", doc)
+        self.assertIn("Anexo B: Comparação.</strong> Texto do autor deste relatório.", doc)
+
+    def test_cli_mantem_a_ordem_dos_dois_tipos_de_anexo(self):
+        with tempfile.TemporaryDirectory() as d:
+            arqs = []
+            for nome in ("rel", "a", "c", "b"):
+                f = pathlib.Path(d) / f"{nome}.md"; f.write_text(f"# {nome}\n\ntexto {nome}"); arqs.append(f)
+            saida = pathlib.Path(d) / "x.html"
+            with contextlib.redirect_stdout(io.StringIO()):
+                rp.main([str(arqs[0]), "--saida", str(saida), "--html-somente", "--anexo", "A", str(arqs[1]),
+                         "--anexo-autor", "Comparação", str(arqs[2]), "--anexo", "B", str(arqs[3])])
+            doc = saida.read_text()
+            self.assertLess(doc.index("Anexo A: A."), doc.index("Anexo B: Comparação."))
+            self.assertLess(doc.index("Anexo B: Comparação."), doc.index("Anexo C: B."))
+
+    def test_lista_colada_no_paragrafo(self):
+        h = rp.md_para_html("Itens:\n- um\n- dois")
+        self.assertIn("<p>Itens:</p>", h)
+        self.assertIn("<ul><li>um</li><li>dois</li></ul>", h)
+
+    def test_lista_aninhada(self):
+        h = rp.md_para_html("1. um\n   - a\n   - b\n2. dois")
+        self.assertEqual(h, "<ol><li>um<ul><li>a</li><li>b</li></ul></li><li>dois</li></ol>")
+
+    def test_tabela(self):
+        h = rp.md_para_html("| Col | Valor |\n|---|---|\n| x | **2** |")
+        self.assertIn("<th>Col</th><th>Valor</th>", h)
+        self.assertIn("<td>x</td><td><strong>2</strong></td>", h)
+
+    def test_anexos_na_ordem_cada_um_em_pagina_nova(self):
+        doc = rp.montar_documento("# Título X\n\ncorpo", [("Análise A", "pa"), ("Análise B", "pb")])
+        self.assertIn("<title>Título X</title>", doc)
+        self.assertEqual(doc.count('<section class="anexo">'), 2)
+        self.assertLess(doc.index("Anexo A: Análise A"), doc.index("Anexo B: Análise B"))
+        self.assertLess(doc.index("<p>pa</p>"), doc.index("<p>pb</p>"))
+
+    @unittest.skipUnless(rp.achar_navegador(), "sem Chrome ou Chromium nesta máquina")
+    def test_imprime_pdf(self):
+        with tempfile.TemporaryDirectory() as d:
+            saida = pathlib.Path(d) / "x.pdf"
+            rp.imprimir_pdf(rp.montar_documento("# T\n\nolá", [("A", "anexo")]), saida)
+            self.assertTrue(saida.read_bytes().startswith(b"%PDF"))
 
 
 class Formatos(unittest.TestCase):

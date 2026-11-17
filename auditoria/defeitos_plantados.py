@@ -2,7 +2,8 @@
 """Planta defeitos conhecidos, um de cada vez, e exige que a verificação correspondente falhe.
 
 Mede se os testes e o conferir.py pegam o que deveriam pegar. Os defeitos vêm das auditorias
-do repositório (M, N e R); medem esses casos, não a cobertura em geral. Cada defeito é aplicado a uma
+do repositório (M, N e R) e do desenvolvimento do gerador de PDF (G); medem esses casos, não a
+cobertura em geral. Cada defeito é aplicado a uma
 cópia temporária; o repositório não é alterado. Sai com código 1 se algum defeito passar.
 
 Uso: python3 auditoria/defeitos_plantados.py
@@ -54,6 +55,22 @@ RASTREIO = [
     ("N12", "contagem de assinaturas fixa em 1", "rastreio.py",
      "{len(tx.get('signature', []))} assinatura(s)", "1 assinatura(s)"),
 ]
+PDF = [
+    ("G1", "PDF sem os anexos", "relatorio_pdf.py",
+     "for n, (rotulo, texto, *resto) in enumerate(anexos):", "for n, (rotulo, texto, *resto) in enumerate([]):"),
+    ("G2", "lista colada no parágrafo deixa de virar lista", "relatorio_pdf.py",
+     'if _ITEM.match(linha) and not (paragrafo and linha.startswith(" ")):', "if _ITEM.match(linha) and not paragrafo:"),
+    ("G3", "HTML do relatório sem escape", "relatorio_pdf.py",
+     "p = html.escape(p, quote=False)", "p = p"),
+    ("G4", "código some quando está dentro de negrito", "relatorio_pdf.py",
+     'return re.sub(r"\\x00(\\d+)\\x00", lambda m: codigos[int(m[1])], p)', "return p"),
+    ("G5", "lista ordenada perde o número inicial", "relatorio_pdf.py",
+     """out.append(f'<ol start="{inicio}">' if inicio != 1 else f"<{tag}>")""", 'out.append(f"<{tag}>")'),
+    ("G6", "link relativo vira <a> (gravaria o caminho local no PDF)", "relatorio_pdf.py",
+     'if re.match(r"^(https?:|mailto:)", url):', "if True:"),
+    ("G7", "anexo do autor apresentado como entregue", "relatorio_pdf.py",
+     "if (resto[0] if resto else True) else", "if True else"),
+]
 RELATORIO = "exemplo-sintetico/relatorio-exemplo.md"
 CONFERIR = [
     ("R1", "saldo final 997 → 897", RELATORIO, "| destino `TEcWfh…B2f21X` | não | 997 |", "| destino `TEcWfh…B2f21X` | não | 897 |"),
@@ -76,7 +93,7 @@ def main() -> int:
     with tempfile.TemporaryDirectory() as tmp:
         base = pathlib.Path(tmp) / "repo"
         shutil.copytree(RAIZ, base, ignore=shutil.ignore_patterns(".git", ".venv", "__pycache__", ".env"))
-        for verificacao, defeitos in (("testes", RASTREIO), ("conferir", CONFERIR)):
+        for verificacao, defeitos in (("testes", RASTREIO + PDF), ("conferir", CONFERIR)):
             if not rodar(base, verificacao):
                 print(f"ERRO: {verificacao} já falha sem defeito plantado"); return 1
             for ident, desc, arq, antes, depois in defeitos:
